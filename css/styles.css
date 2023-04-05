@@ -4057,7 +4057,7 @@ textarea.form-control-lg {
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
-  visibility: hidden;
+  display: none;
 }
 .navbar-nav {
   display: flex;
@@ -11364,6 +11364,7 @@ html {
   padding-bottom: 1rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
+  background-color: rgba(var(--bs-secondary-rgb)) !important;
 }
 #mainNav .navbar-brand {
   color: #fff;
@@ -11410,15 +11411,16 @@ html {
     background: #1abc9c;
   }
 
+  #mainNav:not(.navbar-shrink) {
+    background-color: transparent !important;
+  }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-   --bs-bg-opacity: 1;
-   background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.5em;
-    visibility: visible;
+    display: block;
   }
 }
 .form-floating input.form-control,
@@ -11458,6 +11460,9 @@ html {
 .masthead .masthead-subheading {
   font-size: 1.25rem;
 }
+.masthead .accent {
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
 .masthead .masthead-avatar {
   width: 15rem;
   height: 15rem;
@@ -11476,6 +11481,9 @@ html {
   }
   .masthead .masthead-subheading {
     font-size: 1.5rem;
+  }
+  .masthead .accent {
+    color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
   }
 }
 .portfolio .portfolio-item {
