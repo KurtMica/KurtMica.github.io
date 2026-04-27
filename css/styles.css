@@ -11489,11 +11489,12 @@ html {
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
-  display: block;
+  display: flex;
   border-radius: 0.5rem;
   overflow: hidden;
   width: 100%;
-  min-height: 10rem;
+  height: 10rem;
+  justify-content: center;
   vertical-align: middle;
   text-align: center;
   font-size: 1rem;
@@ -11522,6 +11523,13 @@ html {
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
+}
+
+.portfolio .portfolio-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  padding: 1rem;
 }
 
 .portfolio-modal .btn-close {
