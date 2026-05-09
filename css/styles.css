@@ -11451,6 +11451,7 @@ html {
   background-position: center center;
   background-attachment: scroll;
   background-size: cover;
+  background-color: rgba(var(--bs-secondary-rgb));
   position: relative;
 }
 .masthead .masthead-heading {
@@ -11474,6 +11475,7 @@ html {
   .masthead {
     padding-top: calc(6rem + 104px);
     padding-bottom: 6rem;
+    background-color: rgba(var(--bs-primary-rgb));
   }
   .masthead .masthead-heading {
     font-size: 4rem;
